@@ -13,7 +13,9 @@ body {
 .nav-bar-all {
   background: rgb(86, 46, 255);
 }
-
+.nav-bar-wrap {
+  background: rgb(86, 46, 255);
+}
 .container {
   width: 870px;
   margin: auto;
@@ -181,7 +183,7 @@ article.blog {
 
 .course-desc a {
   text-decoration: none;
-  color: #ED6B4F;
+  color: #ed6b4f;
 }
 
 .course-result {
@@ -195,7 +197,7 @@ article.blog {
 }
 
 .course-rating .golden {
-  color: #FFC014;
+  color: #ffc014;
 }
 
 .course-rating .gray {
@@ -203,7 +205,7 @@ article.blog {
 }
 
 .course-rating span {
-  color: #A2A2A2;
+  color: #a2a2a2;
   margin-left: 10px;
 }
 
@@ -211,9 +213,8 @@ article.blog {
   width: 95px;
   text-align: center;
   border-radius: 15px;
-  background: #FEE5DF;
-  color:
-    #ED6B4F;
+  background: #fee5df;
+  color: #ed6b4f;
 }
 
 .course-duration i {
@@ -223,3 +224,75 @@ article.blog {
 /*-------------------------
  our course details end 
 -------------------------*/
+
+/*--------------------------
+    media queries start
+---------------------------*/
+
+@media only screen and (max-width: 688px) {
+  /* nav-bar-start */
+  .nav-bar-main {
+    flex-direction: column;
+  }
+  .nav-bar-logo {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    font-size: 25px;
+  }
+  .nav-bar-menu {
+    margin: auto;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-bar-menu a {
+    margin: 15px;
+    font-size: 20px;
+  }
+  .nav-bar-menu img {
+    display: none;
+  }
+  /* nav-bar-start */
+
+  /* players-start */
+  .container {
+    width: 100%;
+  }
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .player img {
+    margin: 0px;
+  }
+
+  /* players-end */
+
+  /* top-blog-post-start */
+
+  .top-blogs-post-wrap {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: -30px;
+  }
+
+  /* top-blog-post-end */
+
+  /* course-details-start */
+
+  .course-details-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course-pages {
+    margin: 15px auto;
+  }
+
+  /* course-details-end */
+}
+/*--------------------------
+    media queries end
+---------------------------*/
